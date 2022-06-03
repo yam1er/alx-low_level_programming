@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S 1-main.c -o 1-main.o
+gcc -c 1-main.c -o 1-main.o
