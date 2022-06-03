@@ -7,6 +7,5 @@
  */
 int main(void)
 {
-	print("Hello");
     return (0);
 }
