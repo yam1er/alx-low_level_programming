@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * return: alway (0) Success
+ * Return: always 0 (Success)
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if ((alpha != 'e') || (alpha != 'q'))
+		if ((alpha != 'e') && (alpha != 'q'))
 		{
 			putchar(alpha);
 		}
