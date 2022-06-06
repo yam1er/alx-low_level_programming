@@ -16,7 +16,6 @@ int main(void)
 	{
 		putchar(alpha);
 	}
-	putchar('\n');
 	/**
 	* print uppercase alphabet out
 	*/
@@ -24,5 +23,6 @@ int main(void)
 	{
 		putchar(alpha);
 	}
+	putchar('\n');
 	return (0);
 }
