@@ -1,2 +1,1 @@
-# alx-low_level_programming
-That is my first contact with C
+This directory is about how to understand C language variable
