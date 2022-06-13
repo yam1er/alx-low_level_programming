@@ -34,7 +34,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					cent = ((aff % 10) % 10);
+					cent = ((aff / 10) % 10);
 					_putchar((aff / 100) + '0');
 					_putchar(cent + '0');
 					_putchar((aff % 10) + '0');
