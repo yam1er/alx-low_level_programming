@@ -37,7 +37,7 @@ void print_times_table(int n)
 					cent = ((aff - 100) / 100);
 					_putchar((aff / 100) + '0');
 					_putchar(cent + '0');
-					_putchar((aff % 100) + '0');
+					_putchar((aff % 10) + '0');
 				}
 			}
 			_putchar('\n');
