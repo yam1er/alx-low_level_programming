@@ -1,4 +1,4 @@
-#include "main.ih"
+#include "main.h"
 
 /**
  * reset_to_98 - take int pointer as argument and reset it to 98
