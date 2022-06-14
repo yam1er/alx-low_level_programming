@@ -1,8 +1,8 @@
-#include "main.h"
+#include "main.ih"
 
 /**
  * reset_to_98 - take int pointer as argument and reset it to 98
- * @*n: the pointer to take andd transform haardly
+ * @n: the pointer to take andd transform haardly
  *
  * Return: void
  */
