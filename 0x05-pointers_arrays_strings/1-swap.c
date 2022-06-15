@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * swap_int - function that swaps the value of two integers
  * @a: hold the adress of first integer
@@ -7,7 +6,7 @@
  * Return: void
  */
 
-void swap_in(int *a, int *b)
+void swap_int(int *a, int *b)
 {
 	int c;
 
