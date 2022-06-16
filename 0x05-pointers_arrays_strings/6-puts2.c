@@ -9,14 +9,9 @@
 
 void puts2(char *str)
 {
-	int i, size;
+	int i;
 
-
-	for (i = 0; str[i] != 0; i++)
-	{
-		size++;
-	}
-	for (i = 0; i < size; i += 2)
+	for (i = 0; str[i] != 0; i += 2)
 	{
 		_putchar(str[i]);
 	}
