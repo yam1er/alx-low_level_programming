@@ -20,8 +20,4 @@ void rev_string(char *s)
 	{
 		s[size - j - 1] = s[j];
 	}
-	if (size == 0)
-	{
-		s[0] = '';
-	}
 }
