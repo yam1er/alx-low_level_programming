@@ -22,6 +22,6 @@ void rev_string(char *s)
 	}
 	if (size == 0)
 	{
-		s[0] = "";
+		s[0] = '';
 	}
 }
