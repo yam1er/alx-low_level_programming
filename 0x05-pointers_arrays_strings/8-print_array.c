@@ -8,7 +8,7 @@
  * Return: nothing
  */
 
-void (int *a, int n)
+void(int *a, int n)
 {
 	int i;
 
