@@ -32,7 +32,7 @@ int main(void)
 			}
 		}
 		else
-		printf("%d ", indice );
+		printf("%d ", indice);
 	}
 	printf("\n");
 	return (0);
