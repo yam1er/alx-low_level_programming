@@ -10,6 +10,7 @@ int _putchar(char);
 void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
-int lenght(char *str);
+int _strlen(char *s);
+void puts_half(char *str);
 
 #endif
