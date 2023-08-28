@@ -12,5 +12,6 @@ char *string_toupper(char *);
 char *cap_string(char *);
 bool is_separator(char c);
 char *leet(char *);
+char *rot13(char *);
 
 #endif
