@@ -7,7 +7,7 @@
  * Return: pointer to string
  */
 
-char *leet(char str)
+char *leet(char *str)
 {
 	int i;
 	char *ptr = str;
