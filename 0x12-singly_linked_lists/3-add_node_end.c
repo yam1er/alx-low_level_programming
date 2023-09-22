@@ -8,7 +8,7 @@
  * Return: pointer of new node
  */
 
-list_ *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
 
@@ -38,7 +38,7 @@ list_ *add_node_end(list_t **head, const char *str)
 		temp = *head;
 		while (temp->next != NULL)
 		{
-			temp->next;
+			temp = temp->next;
 		}
 		temp->next = new_node;
 	}
