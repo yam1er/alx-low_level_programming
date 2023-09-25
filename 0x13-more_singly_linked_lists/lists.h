@@ -2,7 +2,7 @@
 #define LISTS_H
 
 /**
- * struct listint_s = singly linked
+ * struct listint_s - singly linked
  * @n: integer
  * @next: point to the next nod
  *
