@@ -11,7 +11,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *current;
-	size_t count = 0;
+	size_t count = 0, i;
 	const listint_t *check;
 
 	current = head;
@@ -19,10 +19,10 @@ size_t print_listint_safe(const listint_t *head)
 	while (current != NULL)
 	{
 		count++;
-		printf("[%p] %\n", (void *)current, current->n);
+		printf("[%p] %d\n", (void *)current, current->n);
 
 		check = head;
-		for (size_t i = 0; i < count; i++)
+		for (i = 0; i < count; i++)
 		{
 			if (check == current)
 			{
