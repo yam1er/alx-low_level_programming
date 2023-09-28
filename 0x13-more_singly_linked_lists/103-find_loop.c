@@ -8,22 +8,22 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *tortoise = head, *hare = head;
+	listint_t *torture = head, *lievre = head;
 
-	while (tortoise && hare && hare->next)
+	while (torture && lievre && lievre->next)
 	{
-		tortoise = tortoise->next;
-		hare = hare->next->next;
+		torture = torture->next;
+		lievre = lievre->next->next;
 
-		if (tortoise == hare)
+		if (torture == lievre)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			torture = head;
+			while (torture != lievre)
 			{
-				tortoise = tortoise->next;
-				hare = hare->next;
+				torture = torture->next;
+				lievre = lievre->next;
 			}
-			return (tortoise);
+			return (torture);
 		}
 	}
 
