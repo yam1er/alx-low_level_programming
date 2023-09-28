@@ -10,54 +10,27 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *current;
-	size_t count = 0, i;
-	const listint_t *check;
+	const listint_t *current, *fast;
+	size_t nnodes = 0;
 
+	if (head == NULL)
+		return (0);
 	current = head;
+	fast = head;
 
-	while (current != NULL)
+	while (current != NULL && fast != NULL && fast->next != NULL)
 	{
-		count++;
 		printf("[%p] %d\n", (void *)current, current->n);
+		nnodes++;
 
-		check = head;
-		for (i = 0; i < count; i++)
+		current = current->next;
+		fast = fast->next->next;
+
+		if (current == fast)
 		{
-			if (check == current)
-			{
-				printf("-> [%p] %d\n", (void *)current, current->n);
-				return (count);
-			}
-			check = check->next;
+			printf("-> [%p] %d\n", (void *)current, current->n);
+			break;
 		}
-
-		current = current->next;
 	}
-	return (count);
-}
-
-
-/**
- * free_listint_safe - Frees a listint_t linked list safely
- * @h: A pointer to a pointer to the head of the list
- */
-
-void free_listint_safe(listint_t **h)
-{
-	listint_t *current;
-	listint_t *temp;
-
-	if (h == NULL || *h == NULL)
-		return;
-
-	current = *h;
-
-	while (current != NULL)
-	{
-		temp = current;
-		current = current->next;
-		free(temp);
-		*h = NULL;
-	}
+	return (nnodes);
 }
