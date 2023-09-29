@@ -5,6 +5,8 @@
  * @n: pointer to the number to explore
  * @index: index in which we will set the bit
  *
+ * Return: the value of a bit
+ *
  */
 
 int set_bit(unsigned long int *n, unsigned int index)
