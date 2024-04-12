@@ -6,7 +6,7 @@ NAME = school
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $^ -o $@
+	gcc $^ -o $@
 
 main.o: main.c
 	$(CC) -c -o main.o main.c
